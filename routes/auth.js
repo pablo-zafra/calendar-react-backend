@@ -24,7 +24,6 @@ router.post(
     '/',
     [
         check('email', 'El email no tiene formato correcto').isEmail(),
-        check('password', 'El password debe tener 6 caracteres').isLength({ min: 6 }),
         validarCampos
     ],
     loginUsuario
