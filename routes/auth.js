@@ -1,6 +1,6 @@
 const { Router } = require('express');
 const { check } = require('express-validator');
-const { validarJWT } = require('../middlewares/validar-jwt');
+const { validarJWT } = require('../middlewares/validar-jwt')
 
 const router = Router();
 
@@ -9,6 +9,10 @@ const { validarCampos } = require('../middlewares/validar-campos');
 
 // Rutas de Usuarios / Auth
 // host + /api/auth
+
+const holaMundo = () => {
+    console.log('Hola Mundo');
+}
 
 router.post(
     '/new',
