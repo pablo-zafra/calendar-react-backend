@@ -101,6 +101,9 @@ const loginUsuario = async(req, res = response) => {
 const revalidarToken = (req, res = response) => {
 
     // console.log('se requiere /');
+
+    
+
     res.json({
         ok : true,
         msg: 'renew',
