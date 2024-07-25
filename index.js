@@ -28,6 +28,6 @@ app.use('/api/events', require('./routes/events'));
 
 
 // Escuchar peticiones
-app.listen( process.env.PORT, () => {
+app.listen( process.env.PORT, '0.0.0.0', () => {
     console.log(`Servidor corriendo en el puerto ${ process.env.PORT }`);
 });
